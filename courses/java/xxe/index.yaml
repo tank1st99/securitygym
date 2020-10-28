@@ -1,0 +1,11 @@
+title: XXE
+abstract: XML External Entiti (XXE) Processing
+language: java
+profile: java
+logo_path: xxe.png
+run_checks: cd courses/java/xxe && mvn test -Dorg.slf4j.simpleLogger.defaultLogLevel=ERROR -Dstyle.color=never
+vulnerable_code_file: src/main/java/ru/yandex/lab_xxe/BillPrintingController.java
+excluded_files:
+  - description/
+  - index.yaml
+  - xxe.png

@@ -11,6 +11,7 @@ imagesbuild:
 	docker build -t security-gym-python -f images/python/Dockerfile .
 	docker build -t security-gym-javascript -f images/javascript/Dockerfile .
 	docker build -t security-gym-golang -f images/golang/Dockerfile .
+	docker build -t security-gym-java -f images/java/Dockerfile .
 
 .PHONY: prodbuild
 prodbuild:

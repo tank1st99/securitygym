@@ -1,0 +1,11 @@
+title: Injection
+abstract: SQL Injection
+language: java
+profile: java
+logo_path: sqli.png
+run_checks: cd courses/java/sqli && mvn test -Dorg.slf4j.simpleLogger.defaultLogLevel=ERROR -Dstyle.color=never
+vulnerable_code_file: src/main/java/ru/yandex/lab_sqli/dao/ArticleDAO.java
+excluded_files:
+  - description/
+  - index.yaml
+  - sqli.png

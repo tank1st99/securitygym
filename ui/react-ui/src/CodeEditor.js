@@ -7,6 +7,7 @@ import "prismjs/components/prism-clike";
 import "prismjs/components/prism-javascript";
 import "prismjs/components/prism-python";
 import "prismjs/components/prism-go";
+import "prismjs/components/prism-java";
 
 class CodeEditor extends React.Component {
 
@@ -16,6 +17,8 @@ class CodeEditor extends React.Component {
           return languages.python;
         case "golang":
           return languages.go;
+        case "java":
+          return languages.java;
         default:
           return languages.javascript;
       }

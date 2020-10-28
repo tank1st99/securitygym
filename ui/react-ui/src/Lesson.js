@@ -224,7 +224,7 @@ class Lesson extends React.Component {
                     vertical: 'bottom',
                     horizontal: 'right',
                 }}
-                autoHideDuration={10000}
+                autoHideDuration={100000}
                 message="Run tests. Wait, please..."
                 open={this.state.show_waiting_message}
                 onClose={(event, reason) => {this.setState({'show_waiting_message': false})}}
