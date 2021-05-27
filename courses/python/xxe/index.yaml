@@ -1,5 +1,5 @@
 title: XXE
-abstract: XML External Entiti (XXE) Processing
+abstract: XML External Entity (XXE) Processing
 language: python
 profile: python
 logo_path: xxe.png
