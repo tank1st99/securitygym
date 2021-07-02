@@ -1,4 +1,4 @@
-package ru.yandex.lab_xxe;
+package ru.yandex.lab_sqli;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,14 +20,14 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class LabXxeApplicationTests {
+public class LabSqliApplicationTests {
 
 	@Autowired
 	private TestRestTemplate restTemplate;
 
 	@Test
-	public void testXMLProcessing() throws IOException{
-		Random random = new Random();
+	public void testFunctional() throws IOException{
+		/*Random random = new Random();
 		Path testPath = Files.createTempFile("bill", ".xml");
 		String xml_content = "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n" +
 			"<bill>\n";
@@ -60,12 +60,12 @@ public class LabXxeApplicationTests {
 		assertThat(response.getBody()).contains(totalPrice.toString());
 		if(response.getBody().contains(totalPrice.toString())){
 			System.out.println("Functional tests are passed.");
-		}
+		}*/
 	}
 
 	@Test
-	public void testXXEDefense() throws Exception{
-		LinkedMultiValueMap<String, Object> parameters = new LinkedMultiValueMap<>();
+	public void testSQLiDefense() throws Exception{
+		/*LinkedMultiValueMap<String, Object> parameters = new LinkedMultiValueMap<>();
 		parameters.add("bill_xml", new org.springframework.core.io.ClassPathResource("bill_entity.xml"));
 
 		HttpHeaders headers = new HttpHeaders();
@@ -78,7 +78,7 @@ public class LabXxeApplicationTests {
 		assertThat(response.getBody()).doesNotContain("XXETESTXXE");
 		if(!response.getBody().contains("XXETESTXXE")){
 			System.out.println("Security tests are passed.");
-		}
+		}*/
 	}
 
 }

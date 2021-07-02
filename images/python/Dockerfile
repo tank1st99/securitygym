@@ -1,7 +1,7 @@
 FROM python:3.6-alpine
 
 RUN apk update && apk upgrade && pip install -U pip
-RUN apk add --update --no-cache g++ gcc libxslt-dev py-lxml
+RUN apk add --update --no-cache g++ gcc libxslt-dev
 
 COPY courses/python/requirements.txt /
 
